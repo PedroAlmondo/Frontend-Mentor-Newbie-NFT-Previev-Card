@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+a .popup {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: cyan;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .5s;
+}
+
+a div.eyeimg {
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s;
+}
+
+a:hover .popup {
+    background-color: cyan;
+    opacity: 0.5;
+}
+
+a:hover .eyeimg {
+    opacity: 1;
+}
+
+.card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 325px;
+    height: 500px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 5px hsl(215, 55%, 9%);
+}
+
+.card .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+div.img {
+    position: relative;
+    width: 100%;
+}
+
+.card div.img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card .about h1.title {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 0;
+    color: hsl(0, 0%, 100%);
+}
+
+.card .about p.desc {
+    width: 100%;
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+    padding-bottom: 10px;
+}
+
+.card .about span.price {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: hsl(178, 100%, 50%);
+    font-weight: 700;
+}
+
+.card .about span.price img {
+    padding-right: 10px;
+}
+
+.card .about span.time {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+}
+
+.card .about span.time img {
+    padding-right: 10px;
+}
+
+.card span.creator {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    color: hsl(215, 51%, 70%);
+}
+
+.card span.creator img {
+    height: 30px;
+    border: 1px white solid;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.card span.creator a {
+    margin-left: 3px;
+}
